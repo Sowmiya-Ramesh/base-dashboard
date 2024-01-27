@@ -1,0 +1,28 @@
+.sideBar {
+    height: 100vh;
+    min-width: 218px;
+    position: fixed;
+    // z-index: 1;
+    background-color: rgb(231, 238, 236);
+    .sideBarLogo {
+        padding-left: 40px;
+    }
+
+    .sideBarList {
+        flex-grow: 0;
+        .sideBarRow {
+            list-style-type: none;
+            padding:16px 30px 16px 0px;
+            .listContainer{
+                gap: 12px;            
+                flex-grow: 0;
+                display: flex;
+                flex-direction: row;
+                .icon {}
+
+                .title {}
+
+            }
+        }
+    }
+}
