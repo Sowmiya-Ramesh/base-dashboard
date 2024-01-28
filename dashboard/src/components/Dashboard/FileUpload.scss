@@ -1,8 +1,61 @@
-.fileUploadContainer {
-    // width: 596px;
-    // height: 367px;
-    // top: 218px;
-    // // left: 518px;
-    // border-radius: 8px;
-    margin-left: 250px;
-}
+.fileUploadPage {
+    margin: 0px 370px 0px 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    .fileUploadContainer {
+      position: relative;
+      width: 596px;
+      height: 367px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      border: 1px solid #00000014;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+  
+      .fileBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 267px;
+        height: 76px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+  
+        .icon {}
+  
+        .description {
+          font-size: 15px;
+          color: black;
+        }
+  
+        .buttonContainer {
+          width: 564px;
+          height: 56px;
+          border-radius: 8px;
+          gap: 8px;
+          background-color: #605BFF;
+        }
+      }
+    }
+  
+    .tableWrapper {
+      position: absolute;
+      top: calc(100% + 16px); // Adjust the spacing as needed
+      left: 0;
+      width: 1065px;
+      background-color: #FFFFFF;
+    //   border: 1px solid #00000014;
+      z-index: 2; 
+      margin-left: 300px;// Ensure it's behind the .fileUploadContainer
+    }
+  }
+  

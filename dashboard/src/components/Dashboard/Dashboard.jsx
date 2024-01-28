@@ -5,17 +5,15 @@ import Header from './Header'
 import FileUpload from './FileUpload'
 
 
-const Dashboard = ()=> {
+const Dashboard = () => {
   return (
-    <>
-      <div className='dashboardContainer'>
+    <div className='dashboardContainer'>
       <SideBar />
       <div className='landingPage'>
-      <Header />
-      <FileUpload />
+        <Header />
+        <FileUpload />
       </div>
-      </div>
-    </>
+    </div>
   )
 }
 
