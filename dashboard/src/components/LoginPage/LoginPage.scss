@@ -1,25 +1,25 @@
 .diagonal-background {
-  height: 100vh;
-  display: flex;
-//   align-items: center;
-//   justify-content: center;
-  color: rgb(23, 18, 18);
-//   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
+    height: 100vh;
+    display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    color: rgb(23, 18, 18);
+    //   text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
 
-  .color1 {
-    background-color: #605bff;
-    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-  }
-  
-      .container {
+    .color1 {
+        background-color: #605bff;
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .container {
         display: flex !important;
         flex-direction: column;
         justify-content: flex-end;
@@ -29,44 +29,58 @@
         width: 100%;
         margin-left: auto;
         padding: 0px 20px 0px 0px;
-        
+
         .buttons {
-          display: flex;
-          flex-direction: row;
-          gap: 10px;
-  
-          .buttonGoogle,
-          .buttonApple {
-            width: 197.6px;
-            height: 32.93px;
-            background-color: #fff;
-            color: black;
-            pointer-events: none;
-            font-size: 9px;
-          }
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            .buttonGoogle,
+            .buttonApple {
+                width: 197.6px;
+                height: 32.93px;
+                background-color: #fff;
+                color: black;
+                pointer-events: none;
+                font-size: 9px;
+            }
         }
-  
+
         form {
-          width: 70%;
-          padding: 20px;
-          border-radius: 5px;
-          background: #fff;
-          gap:20px;
-  
-          .signInButton {
-            width: 356px;
-            height: 43px;
-            border-radius: 8px;
-            gap: 8px;
-            background-color: #605bff;
-          }
+            width: 70%;
+            padding: 20px;
+            border-radius: 5px;
+            background: #fff;
+            gap: 20px;
+
+            .signInButton {
+                width: 356px;
+                height: 43px;
+                border-radius: 8px;
+                gap: 8px;
+                background-color: #605bff;
+            }
         }
-  
+
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            left: 240px;
+            padding: 40px;
+            display: flex;
+            gap: 10px;
+
+            .social-icon {
+                width: 42px;
+                height: 41px;
+                color:#fff;
+            }
+        }
+
         pre {
-          width: 70%;
-          color: #131111;
-          font-size: larger;
+            width: 70%;
+            color: #131111;
+            font-size: larger;
         }
-      }
-  }
-  
+    }
+}
