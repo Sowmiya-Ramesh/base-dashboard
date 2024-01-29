@@ -22,7 +22,6 @@ const LoginPage = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-    // isSubmit ? navigate('/dashboard') : '';
   };
 
   useEffect(() => {
@@ -53,17 +52,12 @@ const LoginPage = () => {
   return (
     <div className="diagonal-background">
     <div className="color1"></div>
-    {/* <div className="color2"> */}
     <div className="container">
-      {/* {Object.keys(formErrors).length === 0 && isSubmit ? (
-        <div className="ui message success">Signed in successfully</div>
-      ) : (
-        <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
-      )} */}
-
       <form onSubmit={handleSubmit}>
-        <h1>Sign In</h1>
-        <p>Sign in to your account</p>
+    <div style={{paddingBottom:'20px'}}>
+    <Typography variant='h4'>Sign In</Typography>
+        <Typography>Sign in to your account</Typography>
+    </div>
         <div className="buttons">
         <Button variant="contained" type="submit" className="buttonGoogle">
           <img src={Google}  width='20px' height='25px' style={{padding:'5px 0px 5px 0px'}} ></img>  Sign in with Google
@@ -72,7 +66,6 @@ const LoginPage = () => {
           <img src={Apple} width='20px' height='25px' style={{padding:'5px'}} ></img> Sign in with Apple
           </Button>
         </div>
-        {/* <div className="ui divider"></div> */}
         <div className="ui form">
           <div className="field">
             <Typography style={{paddingTop:'20px'}}>Email</Typography>
@@ -122,8 +115,6 @@ const LoginPage = () => {
         </div>
       </form>
     </div>
-    {/* </div> */}
-
     </div>
   );
 }

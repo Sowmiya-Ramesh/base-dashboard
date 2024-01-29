@@ -92,7 +92,7 @@ const FileUpload = () => {
                         <FileUploadOutlinedIcon /> Upload
                     </Button>
                     {typeError && (
-                        <div className="alert alert-danger" role="alert" style={{color:'red'}}>{typeError}</div>
+                        <div className="alert alert-danger" role="alert" style={{ color: 'red' }}>{typeError}</div>
                     )}
                 </div>
             </div>
@@ -112,29 +112,13 @@ const FileUpload = () => {
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {/* {excelData.map((individualExcelData, index) => (
-                                        <StyledTableRow key={index}>
-                                            {Object.keys(individualExcelData).map((key, columnIndex) => (
-                                                <StyledTableCell component="th" scope="row" key={key}>
-                                                    {columnIndex === 3 ? (
-                                                     <Select value={''} onChange={(e) => console.log('Dropdown value selected:', e.target.value)}>
-                                                     {dropDownOptions.map((option, optionIndex) => (
-                                                       <MenuItem key={optionIndex} value={option}>{option}</MenuItem>
-                                                     ))}
-                                                   </Select>
-                                                    ) : (
-                                                        individualExcelData[key]
-                                                    )}
-                                                </StyledTableCell>
-                                            ))}
-                                        */}
                                     {excelData.map((individualExcelData, index) => (
                                         <StyledTableRow key={index}>
                                             {Object.keys(individualExcelData).map((key, columnIndex) => (
                                                 <StyledTableCell component="th" scope="row" key={key}>
                                                     {columnIndex === 3 ? (
                                                         <Select
-                                                        // label='Select Tags'
+                                                            // label='Select Tags'
                                                             multiple
                                                             value={Array.isArray(dropDownOptions[individualExcelData[key]]) ? dropDownOptions[individualExcelData[key]] : []}
                                                             onChange={(e) => setDropdownOptions({
@@ -146,12 +130,6 @@ const FileUpload = () => {
                                                                 <MenuItem key={optionIndex} value={option.trim()}>{option.trim()}</MenuItem>
                                                             ))}
                                                         </Select>
-                                                        //      <Select value={''} onChange={(e) => console.log('Dropdown value selected:', e.target.value)}>
-                                                        //      {individualExcelData[key].split(',').map((option, optionIndex) => (
-                                                        //        <MenuItem key={optionIndex} value={option.trim()}>{option.trim()}</MenuItem>
-                                                        //      ))}
-                                                        //    </Select>
-
                                                     ) : (
                                                         individualExcelData[key]
                                                     )}
@@ -174,7 +152,6 @@ const FileUpload = () => {
                         <div>No File is uploaded yet!</div>
                     )}
                 </div>
-
             </div>
         </div>
     )

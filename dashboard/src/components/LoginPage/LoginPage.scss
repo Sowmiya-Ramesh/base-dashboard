@@ -22,13 +22,13 @@
       .container {
         display: flex !important;
         flex-direction: column;
-        justify-content: flex-end; /* Align to the bottom */
+        justify-content: flex-end;
         // align-items: center;
         height: 100%;
         max-width: 500px;
         width: 100%;
         margin-left: auto;
-        padding: 0px 20px 0px 0px; /* Adjust padding */
+        padding: 0px 20px 0px 0px;
         
         .buttons {
           display: flex;
@@ -48,7 +48,6 @@
   
         form {
           width: 70%;
-        //   border: 1px solid #dfdfdf;
           padding: 20px;
           border-radius: 5px;
           background: #fff;
