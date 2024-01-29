@@ -49,13 +49,12 @@
   
     .tableWrapper {
       position: absolute;
-      top: calc(100% + 16px); // Adjust the spacing as needed
+      top: calc(100% + 16px);
       left: 0;
       width: 1065px;
       background-color: #FFFFFF;
-    //   border: 1px solid #00000014;
       z-index: 2; 
-      margin-left: 300px;// Ensure it's behind the .fileUploadContainer
+      margin-left: 300px;
     }
   }
   

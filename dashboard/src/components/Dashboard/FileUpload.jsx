@@ -100,7 +100,6 @@ const FileUpload = () => {
                 <h3>Uploads</h3>
                 <div className="sheetTable">
                     {excelData ? (
-                        // <div className="table-responsive">
                         <TableContainer component={Paper}>
                             <Table sx={{ minWidth: 700 }} aria-label="customized table" className='table'>
                                 <TableHead>
@@ -118,7 +117,6 @@ const FileUpload = () => {
                                                 <StyledTableCell component="th" scope="row" key={key}>
                                                     {columnIndex === 3 ? (
                                                         <Select
-                                                            // label='Select Tags'
                                                             multiple
                                                             value={Array.isArray(dropDownOptions[individualExcelData[key]]) ? dropDownOptions[individualExcelData[key]] : []}
                                                             onChange={(e) => setDropdownOptions({
